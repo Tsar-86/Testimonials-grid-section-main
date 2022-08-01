@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* min-height: 100%; */
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: silver;
+    font-size: 14px;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "clifford clifford walters whittle"
+                         "harmon abrams abrams whittle";
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    height: 100vh;
+    max-height: 100%;
+    margin: 1em;
+    padding: 5em;
+}
+
+.box {
+    padding: 1em 2.5em;
+
+}
+
+.box__clifford {
+    grid-area: clifford;
+    background-color: hsl(263, 55%, 52%);
+}
+
+.box__walters {
+    grid-area: walters;
+    background-color: hsl(217, 19%, 35%);
+} 
+
+.box__harmon {
+    grid-area: harmon;
+    background-color: hsl(0, 0%, 100%);
+    color: black;
+}
+
+.box__abrams {
+    grid-area: abrams;
+    background-color: hsl(219, 29%, 14%);
+}
+
+.box__whittle {
+    grid-area: whittle;
+    background-color: hsl(0, 0%, 100%);
+    color: black;
+}
